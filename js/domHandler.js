@@ -11,3 +11,15 @@ darkTheme.addEventListener('click', function darkThemeEvent () {
 largeText.addEventListener('click', function largeTextEvent () {
 	container.classList.toggle('largeTextLetters');
 });
+
+
+var test = document.getElementById("messageInput");
+
+test.addEventListener("keypress", myFunction);
+
+function myFunction () {
+    if(event.keyCode === 13) {
+    alert("You pressed a key inside the input field");
+    console.log ("ENTER key used!") 
+    }  
+};
