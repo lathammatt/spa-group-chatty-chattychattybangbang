@@ -4,35 +4,47 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Chatty Group Exercise</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,300' rel='stylesheet' type='text/css'>
+
 	<link rel="stylesheet" href="chatty.css">
 </head>
 <body>
 
 <!-- NAVBAR GOES HERE... -->
-	<nav>
-
-		<div>
-			<img src="http://www.chittythemusical.co.uk/images/logos/logo-main.png">
-		</div>
+	<div class="appWindow">
+		<nav>
+			<img src="http://www.chittythemusical.co.uk/images/logos/logo-main.png" class="logoImg">
+		
 
 		<!-- This is the target of the event listener! -->
 		
-			<input id="messageInput" type="text" name="" value="" placeholder="Enter message"> 
-		
+			
+			<input id="messageInput" type="text" placeholder="Enter message">
 
-			<input type="submit" value="Clear Message">
-	  
-	  	<input type="checkbox" name="options" value="Dark Theme" checked>Dark Theme
-	  	<input type="checkbox" name="options" value="Large Text">Large Text
-	  
-	</nav>
+			<div id="clearBoardButton">
+				<p>Clear Message Board</p>
+			</div>
+		  
+		  <div class="checkBox">
+			  <input id="darkTheme" type="checkbox" value="Dark Theme">Dark Theme
+			  <input id="largeText" type="checkbox" value="Large Text">Large Text
+		  </div>
+		  
+		</nav>
 
-	<div id="container">
-		<h2>This is where the messages area of the chatty will go</h2>
+
+		<div id="container">
+			<h2>This is where the messages area of the chatty will go</h2>
+		</div>
 	</div>
 
-
-	<script src="js/chatty.js" type="text/javascript"></script>
+	
+	<script src="js/chatty.js"></script>
+	<script src="js/message.js"></script>
+	<script src="js/addNew.js"></script>
+	<script src="js/delete.js"></script>
+	<script src="js/domHandler.js"></script>
 
 </body>
 </html>
