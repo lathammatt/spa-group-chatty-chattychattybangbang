@@ -1,19 +1,14 @@
 {
 	"messages": [
-		{"name": "Sarah",
-		"message": "How R u?"},
+		{"message": "How R u?"},
 
-		{"name": "Jack",
-		"message": "OK. U?"},
+		{"message": "OK. U?"},
 
-		{"name": "Sarah",
-		"message": "ILU"},
+		{"message": "ILU"},
 
-		{"name": "Jack",
-		"message": "TBFJSABNNKY?"},
+		{"message": "TBFJSABNNKY?"},
 
-		{"name": "Sarah",
-		"message": ".........Wait, what?"},
+		{"message": ".........Wait, what?"}
 
 	]
 
