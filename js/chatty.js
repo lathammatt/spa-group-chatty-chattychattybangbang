@@ -30,3 +30,4 @@ function applyText(object, array){
 
 
 })(Chatty || {});
+
