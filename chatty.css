@@ -1,0 +1,71 @@
+body {
+	font-family: 'Raleway', sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.appWindow {
+	width: 80%;
+	border: 2px solid red;
+	margin: 0 auto;
+}
+
+/*-------NAV------*/
+
+nav {
+	border: 1px solid black;
+}
+
+.logoImg {
+	width: 150px;
+	margin-top: 10px;
+}
+
+#messageInput {
+	width: 350px;
+	height: 50px;
+	font-size: 1.5em;
+	font-family: 'Raleway', sans-serif;
+	margin-bottom: 20px;
+	margin-left: 40px;
+}
+
+#clearBoardButton {
+	display: inline-block;
+	height: 50px;
+	width: 200px;
+	border: 1px solid black;
+	font-size: 1em;
+	border-radius: 20% / 60%;
+	text-align: center;
+	margin-top: 10px;
+	margin-left: 75px;
+}
+
+#clearBoardButton p {
+	margin-top: 15px;
+}
+
+.checkBox {
+	display: block;
+	margin-left: 190px;
+	margin-bottom: 15px;
+}
+
+.checkBox input {
+	display: inline;
+}
+
+.darkThemeColors {
+	background-color: slateGray;
+	color: white;
+}
+
+.largeTextLetters {
+	font-size: 2em;
+}
+/*-------Message Area-----*/
+#container {
+	border: 1px solid black;
+}
