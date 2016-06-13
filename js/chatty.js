@@ -1,15 +1,35 @@
-// event listener that targets input box on DOM, and detects
-// once ENTER key is clicked... 
+var Chatty = (function getMessage(newchat){
+>>>>>>> master
 
+var xhr = new XMLHttpRequest();
 
-var test = document.getElementById("messageInput");
+xhr.addEventListener("load", loadedFile)
+xhr.addEventListener("failed", failedFile)
 
-test.addEventListener("keypress", myFunction);
+xhr.open("GET", "messages.json");
 
-function myFunction () {
-    if(event.keyCode === 13) {
-    alert("You pressed a key inside the input field");
-    console.log ("ENTER key used!") 
-    }  
+xhr.send();
+
+function loadedFile(){
+	console.log("file loaded");
+	var preloaded = JSON.parse(xhr.responseText);
+	applyText(preloaded)
 };
+
+function failedFile(){
+	alert("file failed to load");
+};
+
+
+function applyText(object, array){
+	var counter = 0, messageCard;
+	for (var i = 0; i < object.length; i++) {
+		messageCard = `<div class="lightbox"><h3>${object.messages[i].message}</h3><button id="card-${counter}">Delete</button></div>`;
+		// output.innerHTML += messageCard;
+		counter++;
+	};
+};	
+
+
+})(Chatty || {});
 
