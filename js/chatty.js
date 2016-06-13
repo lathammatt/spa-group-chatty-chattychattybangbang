@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // event listener that targets input box on DOM, and detects
 // once ENTER key is clicked... 
 
@@ -13,6 +12,4 @@ function myFunction () {
     console.log ("ENTER key used!") 
     }  
 };
-=======
-var chatty = {};
->>>>>>> master
+
