@@ -90,6 +90,7 @@ nav h1 {
 /*-------Message Area-----*/
 #container {
 	height: 1400px;
+	background: green;
 }
 
 #messageWindow {
