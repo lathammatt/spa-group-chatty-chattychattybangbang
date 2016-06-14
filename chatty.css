@@ -61,7 +61,7 @@ nav h1 {
 #clearBoardButton:hover {
 	background: #c0392b;
 	color: white;
-	transition: .3s;
+	transition: .2s;
 }
 
 #clearBoardButton p {
@@ -84,7 +84,7 @@ nav h1 {
 }
 
 .largeTextLetters {
-	font-size: 2em;
+	font-size: 1.3em;
 }
 
 /*-------Message Area-----*/
@@ -99,6 +99,7 @@ nav h1 {
 	border: 3px solid black;
 	border-top: none;	
 	margin: 132px auto;
+	min-height: 400px;
 	/*background: white;*/
 }
 
