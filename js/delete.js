@@ -7,7 +7,7 @@ var Chatty = (function deleteMessage (newChat){
     	var cardtodelete = document.getElementById("mess-" + `${clickedbtn}`);
 		console.log("clicked", clickedbtn, cardtodelete);
 		messageWindow.removeChild(cardtodelete)
-		preloaded.messages.splice(clickedbtn, 1);}
+		preloaded.messages.splice(clickedbtn, 1, {});}
 }
   	);
 	return newChat
