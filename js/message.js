@@ -19,14 +19,14 @@ function failedFile(){
 	alert("file failed to load");
 };
 
-function applyText(object, array){
-	var counter = 0, messageCard;
-	for (var i = 0; i < object.length; i++) {
-		messageCard = `<div class="lightbox"><h3>${object.messages[i].message}</h3><button id="card-${counter}">Delete</button></div>`;
-		// output.innerHTML += messageCard;
-		counter++;
-	};
-};	
+// function applyText(object, array){
+// 	var counter = 0, messageCard;
+// 	for (var i = 0; i < object.length; i++) {
+// 		messageCard = `<div class="lightbox"><h3>${object.messages[i].message}</h3><button id="card-${counter}">Delete</button></div>`;
+// 		messageWindow.innerHTML += messageCard;
+// 		counter++;
+// 	};
+// };	
 
 
 })(Chatty || {});

@@ -1,21 +1,19 @@
 var messageInput = document.getElementById('messageInput');
-var clearBtn = document.getElementById('clearBoardButton');
 var darkTheme = document.getElementById('darkTheme');
 var largeText = document.getElementById('largeText');
-var container = document.getElementById('container');
 
+//----"Dark Theme" check box listener to make background darker in message box
 darkTheme.addEventListener('click', function darkThemeEvent () {
-	container.classList.toggle('darkThemeColors');
+	messageWindow.classList.toggle('darkThemeColors');
 });
 
+//----"Large Text" check box listener to make text large in message box
 largeText.addEventListener('click', function largeTextEvent () {
-	container.classList.toggle('largeTextLetters');
+	messageWindow.classList.toggle('largeTextLetters');
 });
 
-
-var test = document.getElementById("messageInput");
-
-test.addEventListener("keypress", myFunction);
+//---Enter key event listener for message input box
+messageInput.addEventListener("keypress", myFunction);
 
 function myFunction () {
     if(event.keyCode === 13) {

@@ -3,9 +3,8 @@ var Chatty = (
 		if (event.keyCode === 13){
 		var newObj = {"message": input.value};
 		messages.push(newObj);				
-	}
-
+	};
 	
-})(Chatty)
+})(Chatty);
 
 
