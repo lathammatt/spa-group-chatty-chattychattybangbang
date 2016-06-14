@@ -14,7 +14,7 @@ var Chatty = (
 	}
 });
 	return newChat;
-	return preloaded;
+	// return preloaded;
 
 })(Chatty);
 

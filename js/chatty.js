@@ -5,17 +5,13 @@ var Chatty = (function chatProcess(){
 return {
 	getEntries: function(){
 		return preloaded;
-	},
 
-	setDelete: function (){
-
-	}
+}
 };
-
 
 })(Chatty);
 
-console.log("pre", Chatty, preloaded);
+// console.log("pre", Chatty, preloaded);
 
 
 
