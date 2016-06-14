@@ -1,6 +1,5 @@
 var Chatty = (function chatProcess(){
 
-// var preloaded = 0;
 
 // return functions for reading all messages and deleting a message
 return {
