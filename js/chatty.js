@@ -1,33 +1,25 @@
-var Chatty = (function getMessage(newchat){
+var Chatty = (function chatProcess(){
 
-var xhr = new XMLHttpRequest();
+// var preloaded = 0;
 
-xhr.addEventListener("load", loadedFile)
-xhr.addEventListener("failed", failedFile)
+// return functions for reading all messages and deleting a message
+return {
+	getEntries: function (){
+		return preloaded;
+	},
 
-xhr.open("GET", "messages.json");
+	setDelete: function (){
 
-xhr.send();
-
-function loadedFile(){
-	console.log("file loaded");
-	var preloaded = JSON.parse(xhr.responseText);
-	applyText(preloaded)
+	}
 };
 
-function failedFile(){
-	alert("file failed to load");
-};
 
-function applyText(object, array){
-	var counter = 0, messageCard;
-	for (var i = 0; i < object.length; i++) {
-		messageCard = `<div class="lightbox"><h3>${object.messages[i].message}</h3><button id="card-${counter}">Delete</button></div>`;
-		// output.innerHTML += messageCard;
-		counter++;
-	};
-};	
+})(Chatty);
+
+console.log("pre", Chatty, preloaded);
 
 
-})(Chatty || {});
+
+
+
 
