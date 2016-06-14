@@ -6,45 +6,43 @@
 	<title>Chatty Group Exercise</title>
 
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,600,300' rel='stylesheet' type='text/css'>
-
 	<link rel="stylesheet" href="chatty.css">
 </head>
 <body>
+	<!-- NAVBAR GOES HERE... -->
+		<div class="appWindow">
+			<nav>
+				<h1>Ayyyy, Chattayy!</h1>
+				
+				<!-- This is the target of the event listener! -->
+				<input id="messageInput" type="text" placeholder="Enter message">
 
-<!-- NAVBAR GOES HERE... -->
-	<div class="appWindow">
-		<nav>
-			<img src="http://www.chittythemusical.co.uk/images/logos/logo-main.png" class="logoImg">
-		
-		<!-- This is the target of the event listener! -->
-		
-			
-			<input id="messageInput" type="text" placeholder="Enter message">
+				<div id="clearBoardButton">
+					<p>Clear Message Board</p>
+				</div>
+			  
+			  <div class="checkBox">
+				  <input id="darkTheme" type="checkbox" value="Dark Theme">Dark Theme
+				  <input id="largeText" type="checkbox" value="Large Text">Large Text
+			  </div>
+			  
+			</nav>
 
-			<div id="clearBoardButton">
-				<p>Clear Message Board</p>
+
+
+			<div id="container">
+				<div id="messageWindow">
+					<h2>This is where the messages area of the chatty will go</h2>
+					<h3>Also, these are words that hopefully get deleted.</h3>
+				</div>
 			</div>
-		  
-		  <div class="checkBox">
-			  <input id="darkTheme" type="checkbox" value="Dark Theme">Dark Theme
-			  <input id="largeText" type="checkbox" value="Large Text">Large Text
-		  </div>
-		  
-		</nav>
-
-
-
-		<div id="container">
-			<h2>This is where the messages area of the chatty will go</h2>
 		</div>
-	</div>
-
 	
+	<script src="js/domHandler.js"></script>
 	<script src="js/chatty.js"></script>
-	<script src="js/message.js"></script>
+	<!-- <script src="js/message.js"></script> -->
 	<script src="js/addNew.js"></script>
 	<script src="js/delete.js"></script>
-	<script src="js/domHandler.js"></script>
-
+	<script src="js/navBar.js"></script>
 </body>
 </html>

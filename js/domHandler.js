@@ -1,28 +1,23 @@
 var messageInput = document.getElementById('messageInput');
-var clearBtn = document.getElementById('clearBoardButton');
 var darkTheme = document.getElementById('darkTheme');
 var largeText = document.getElementById('largeText');
-var container = document.getElementById('container');
 
+//----"Dark Theme" check box listener to make background darker in message box
 darkTheme.addEventListener('click', function darkThemeEvent () {
-	container.classList.toggle('darkThemeColors');
+	messageWindow.classList.toggle('darkThemeColors');
 });
 
+//----"Large Text" check box listener to make text large in message box
 largeText.addEventListener('click', function largeTextEvent () {
-	container.classList.toggle('largeTextLetters');
+	messageWindow.classList.toggle('largeTextLetters');
 });
 
 
-// var test = document.getElementById("messageInput");
+// //---Enter key event listener for message input box
+// messageInput.addEventListener("keypress", myFunction);
 
-// test.addEventListener("keyup", myFunction);
 
-// function myFunction () {
-//     if(event.keyCode === 13) {
-//     alert("You pressed a key inside the input field");
-//     console.log ("ENTER key used!") 
-//     }  
-// };
+//------XHR------//
 
 var xhr = new XMLHttpRequest();
 // var preloaded = null;
@@ -52,9 +47,8 @@ function applyText(object){
 	var counter = 0;
 	for (var i = 0; i < object.messages.length; i++) {
 		var messageCard = `<div class="lightbox"><h3>${object.messages[i].message}</h3><button id="card-${counter}">Delete</button></div>`;
-		container.innerHTML += messageCard;
+		messageWindow.innerHTML += messageCard;
 		counter++;
-		console.log("apply", messageCard);
 	};
 };
 console.log("check", preloaded);

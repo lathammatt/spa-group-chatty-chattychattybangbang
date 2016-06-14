@@ -1,4 +1,5 @@
 var Chatty = (
+
 	function applyNew(newChat){
 		var test = document.getElementById("messageInput");
 		test.addEventListener("keyup", function () {
