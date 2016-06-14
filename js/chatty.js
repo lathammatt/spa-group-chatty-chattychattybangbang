@@ -4,7 +4,7 @@ var Chatty = (function chatProcess(){
 
 // return functions for reading all messages and deleting a message
 return {
-	getEntries: function (){
+	getEntries: function(){
 		return preloaded;
 	},
 
