@@ -1,6 +1,7 @@
 var messageInput = document.getElementById('messageInput');
 var darkTheme = document.getElementById('darkTheme');
 var largeText = document.getElementById('largeText');
+var messageWindow = document.getElementById('messageWindow');
 
 //----"Dark Theme" check box listener to make background darker in message box
 darkTheme.addEventListener('click', function darkThemeEvent () {
@@ -46,7 +47,7 @@ function failedFile(){
 function applyText(object){
 	var counter = 0;
 	for (var i = 0; i < object.messages.length; i++) {
-		var messageCard = `<div class="lightbox"><h3>${object.messages[i].message}</h3><button id="card-${counter}">Delete</button></div>`;
+		var messageCard = `<div class="lightbox" id="mess-${counter}"><h3>${object.messages[i].message}</h3><button id="card-${counter}">Delete</button></div>`;
 		messageWindow.innerHTML += messageCard;
 		counter++;
 	};
