@@ -3,6 +3,7 @@ var darkTheme = document.getElementById('darkTheme');
 var largeText = document.getElementById('largeText');
 var messageWindow = document.getElementById('messageWindow');
 
+
 //----"Dark Theme" check box listener to make background darker in message box
 darkTheme.addEventListener('click', function darkThemeEvent () {
 	messageWindow.classList.toggle('darkThemeColors');

@@ -6,7 +6,13 @@ var Chatty = (
 		if(event.keyCode === 13){
 		var newObj = {"message": test.value};
 
-		preloaded.messages.push(newObj);
+		if (preloaded.messages.length < 20){
+		preloaded.messages.push(newObj);}
+		else {var clickedbtn = event.target.id.split("-")[1];
+			preloaded.messages.splice(clickedbtn, 1, {});;
+			preloaded.messages.push(newObj);
+			console.log("firstc", messageWindow.firstChild);
+			messageWindow.removeChild(messageWindow.firstChild);}
 		var messageCard = `<div class="lightbox" id="mess-${(preloaded.messages.length)-1}"><h3>${preloaded.messages[(preloaded.messages.length)-1].message}</h3><button id="card-${preloaded.messages.length-1}">Delete</button></div>`;
 		messageWindow.innerHTML += messageCard;
 		console.log("newChat", preloaded.messages);
