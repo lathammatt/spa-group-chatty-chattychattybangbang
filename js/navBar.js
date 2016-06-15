@@ -5,7 +5,9 @@ clearBtn.addEventListener('click', function () {
 	while(messageWindow.firstChild) {
 		messageWindow.removeChild(messageWindow.firstChild);
 		preloaded.messages = [];
+
 	}
 	clearBtn.classList.add('disableBtn');
 });
+
 
