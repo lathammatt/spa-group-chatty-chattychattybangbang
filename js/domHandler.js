@@ -22,23 +22,23 @@ $("#largeText").on("click", function largeTextEvent(){
 
 var preloaded = {};
 
-$.ajax({url:"messages.json"}).done(loadedFile);
+$.ajax({url:"messages.json"}).done(applyText);
 
 
 
-function loadedFile(result){
-	// preloaded = JSON.parse(xhr.responseText);
-	$(result).each(function (key, value){
-		preloaded += value;
-	});
-	console.log('HELLO', typeof preloaded, preloaded);
-	return preloaded;
-	applyText(preloaded);
-};
+// function loadedFile(result){
+// 	// preloaded = JSON.parse(xhr.responseText);
+// 	$(result).each(function (key, value){
+// 		preloaded += value;
+// 	});
+// 	console.log('HELLO', typeof preloaded, preloaded);
+// 	return preloaded;
+// 	applyText(preloaded);
+// };
 
-function failedFile(){
-	alert("file failed to load");
-};
+// function failedFile(){
+// 	alert("file failed to load");
+// };
 
 function applyText(object){
 	var counter = 0;
